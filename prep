@@ -1,0 +1,4 @@
+printf "Installing Docker . . .\n"
+curl -fsSL https://get.docker.com/ | sh
+systemctl enable docker
+systemctl start docker
