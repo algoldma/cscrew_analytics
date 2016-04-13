@@ -2,7 +2,8 @@
 Description=aidan
 
 [Service]
-ExecStart=/usr/bin/docker run
+ExecStart=/usr/bin/docker run --name aidan -p 80:80 -v /root/htdocs/:/usr/local/apache2/htdocs/:ro httpd:latest`
+
 
 [Install]
 WantedBy=multi-user.target
