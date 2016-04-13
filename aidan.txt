@@ -1,0 +1,8 @@
+[Unit]/Users/aidangoldman/Desktop/aidan.txt
+Description=aidan
+
+[Service]
+ExecStart=/usr/bin/docker run
+
+[Install]
+WantedBy=multi-user.target
