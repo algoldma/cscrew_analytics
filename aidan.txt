@@ -2,6 +2,8 @@
 Description=aidan
 
 [Service]
+ExecStartPre=/usr/bin/docker kill aidan
+ExecStartPre=/usr/bin/docker rm aidan
 ExecStart=/usr/bin/docker run --name aidan -p 80:80 -v /root/htdocs/:/usr/local/apache2/htdocs/:ro httpd:latest`
 
 
